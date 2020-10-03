@@ -1,4 +1,4 @@
-# Шаблон презентации (СПбПУ) [![Build Status](https://travis-ci.org/iamm-templates/presentation-template.svg?branch=master)](https://travis-ci.org/iamm-templates/presentation-template)
+# Шаблон презентации (СПбПУ) [![Build Status](https://travis-ci.org/iamm-templates/presentation-template.svg?branch=master)](https://travis-ci.org/polytechnic-templates/presentation-template) [![Semantic Versions](https://img.shields.io/badge/%F0%9F%9A%80-semantic%20versions-informational.svg)](https://semver.org/)
 В этом проекте представлен шаблон презентации. Это форк https://github.com/kspt-templates/presentation, переделанный под меня. Может, и Вам будет удобнее.
 
 **Важно!** Шаблон не идеален и соответствует не всем требованиям.
