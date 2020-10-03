@@ -1,15 +1,11 @@
-sudo: required
 dist: trusty
 services: docker
 branches:
   only:
   - master
-branches:
-  only:
-  - master
 script: 
-  - wget https://github.com/tiulpin/xelatex-docker/raw/master/latexdockercmd.sh -O latexdockercmd.sh
-  - wget https://github.com/tiulpin/xelatex-docker/raw/master/.latexmkrc -O .latexmkrc
+  - wget https://github.com/polytechnic-templates/xelatex-docker/raw/master/latexdockercmd.sh -O latexdockercmd.sh
+  - wget https://github.com/polytechnic-templates/xelatex-docker/raw/master/.latexmkrc -O .latexmkrc
   - chmod a+x latexdockercmd.sh
   - ./latexdockercmd.sh latexmk -cd -f -interaction=nonstopmode -pdf main.tex
   - mv main.pdf presentation-template.pdf
@@ -18,6 +14,6 @@ deploy:
   api_key: 
     secure: "${GH_TOKEN}"
   file: "presentation-template.pdf"
-  skip_cleanup: true
+  cleanup: false
   on:
     repo: polytechnic-templates/presentation-template
