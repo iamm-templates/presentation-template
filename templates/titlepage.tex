@@ -1,32 +1,32 @@
 \makeatletter
 \setbeamertemplate{title page}{
-  \begin{minipage}[b][\paperheight]{\textwidth}
-    \centering
-    \ifx\insertinstitute\@empty\else\usebeamertemplate*{institute}\fi
-    \vfill
-    \ifx\inserttitle\@empty\else\usebeamertemplate*{title}\fi
-    \vfill
-    \usebeamertemplate*{title separator}
-    \ifx\beamer@shortauthor\@empty\else\usebeamertemplate*{author}\fi
-    \ifx\insertdate\@empty\else\usebeamertemplate*{date}\fi
-    \vfill
-    \vspace*{1mm}
-  \end{minipage}
+	\begin{minipage}[b][\paperheight]{\textwidth}
+		\centering
+		\ifx\insertinstitute\@empty\else\usebeamertemplate*{institute}\fi
+		\vfill
+		\ifx\inserttitle\@empty\else\usebeamertemplate*{title}\fi
+		\vfill
+		\usebeamertemplate*{title separator}
+		\ifx\beamer@shortauthor\@empty\else\usebeamertemplate*{author}\fi
+		\ifx\insertdate\@empty\else\usebeamertemplate*{date}\fi
+		\vfill
+		\vspace*{1mm}
+	\end{minipage}
 }
 
 \setbeamertemplate{title}{
-  \vspace{0.5cm}
-  \inserttitle
-  \par
-  \vspace*{0.5em}
+	\vspace{0.5cm}
+	\inserttitle
+	\par
+	\vspace*{0.5em}
 }
 
 \setbeamertemplate{date}{
-  \vspace{0.5cm}
-  \city \\
-  \insertdate
-  \par
-  \vspace*{0.5em}
+	\vspace{0.5cm}
+	\city \\
+	\insertdate
+	\par
+	\vspace*{0.5em}
 }
 \makeatother
 \setbeamerfont{institute}{size=\footnotesize}
